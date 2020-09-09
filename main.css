@@ -285,14 +285,6 @@ i {
 }
 
 /* Animations */
-@keyframes upDown {
-  from {
-    transform: translatey(0px);
-  }
-  to {
-    transform: translatey(-20px);
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
