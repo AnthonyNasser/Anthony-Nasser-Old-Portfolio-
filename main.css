@@ -1,0 +1,303 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kufam:wght@400;600&display=swap");
+/* variables */
+:root {
+  --primary: #eeece8;
+  --secondary: #21211c;
+  --extra: #c8f3ba;
+}
+
+/* base styles */
+html {
+  border-left: 3px solid var(--extra);
+  border-right: 3px solid var(--extra);
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Space Mono", Arial, Helvetica, sans-serif;
+  background: var(--secondary); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    var(--secondary)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    var(--secondary)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: var(--primary);
+}
+body,
+p,
+a,
+ul,
+li,
+h1 {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: var(--primary);
+}
+section#header {
+  font-size: 1em;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#header h1.pitch {
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  font-size: 1.5em;
+  margin: 0;
+}
+#name {
+  font-family: "Kufam";
+  font-size: 2em;
+  color: var(--primary);
+  margin: 5% 0;
+  text-align: center;
+}
+#header img {
+  max-width: 250px;
+  border-radius: 5%;
+  -webkit-box-shadow: 1px 5px 37px -3px rgba(238, 236, 232, 1);
+  -moz-box-shadow: 1px 5px 37px -3px rgba(238, 236, 232, 1);
+  box-shadow: 1px 5px 37px -3px rgba(238, 236, 232, 1);
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+.leader {
+  color: var(--extra);
+}
+button {
+  outline: none;
+  background-color: var(--primary);
+  border: none;
+  padding: 5%;
+  margin: 3% 0;
+}
+button a {
+  color: var(--secondary);
+}
+button:hover {
+  background-color: var(--extra);
+  -webkit-box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 1);
+  -moz-box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 1);
+  box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 1);
+  cursor: pointer;
+}
+/* Grow from hover.css: https://ianlunn.github.io/Hover/ */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+section#about {
+  margin: 0 5%;
+}
+section#body {
+  text-align: center;
+  color: var(--extra);
+}
+hr {
+  color: var(--extra);
+  width: 50%;
+}
+
+/* mobile styles */
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: none;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
+}
+.container::after {
+  display: flex;
+}
+a.nav-item {
+  font-family: "Kufam", Arial;
+}
+a.nav-item:hover,
+a.nav-item:active,
+a.nav-item:focus {
+  color: var(--extra);
+  border-left: 3px solid var(--primary);
+  padding-left: 5px;
+}
+.flexbox {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin: 3%;
+  font-size: 0.8em;
+  background-color: var(--secondary);
+  border-radius: 10%;
+  -webkit-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.79);
+  -moz-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.79);
+  box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.79);
+}
+.card.cardSmall {
+  margin: 2% 0;
+  padding: 2%;
+  width: 50%;
+  justify-content: space-between;
+}
+.card img {
+  width: 100%;
+  border-radius: 10%;
+}
+.card h5,
+h1 {
+  margin: 2%;
+  font-size: 1.3em;
+}
+.card p {
+  margin: 4% 5%;
+}
+.contact h1 {
+  font-family: "Kufam";
+}
+i {
+  margin: 1%;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+  section#header {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+  }
+  #header h1.pitch {
+    font-size: 2em;
+    opacity: 1;
+  }
+  #header img {
+    max-width: 300px;
+  }
+  button {
+    font-size: 0.5em;
+    margin-bottom: 15%;
+  }
+  .card {
+    width: 40%;
+  }
+  .card h5,
+  h1 {
+    font-size: 1.5em;
+  }
+  .works .container .flexbox {
+    flex-flow: row wrap;
+  }
+  .toolkit .container .flexbox {
+    flex-flow: row wrap;
+  }
+  .card.cardSmall {
+    width: 30%;
+    margin: 2%;
+  }
+  .container.about {
+    font-size: 1.2em;
+    margin: 0 5%;
+  }
+  .contact .flexbox {
+    flex-flow: row wrap;
+    font-size: 0.7em;
+  }
+  #name {
+    font-size: 2.5em;
+  }
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  section#header {
+    justify-content: center;
+  }
+  #header h1.pitch {
+    font-size: 2em;
+    margin: 2%;
+  }
+  #header img {
+    max-width: 350px;
+  }
+  .card {
+    width: 35%;
+  }
+  section#about {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .flexbox {
+    flex-flow: row wrap;
+    flex: 1;
+  }
+  button {
+    font-size: 0.7em;
+    margin-bottom: 15%;
+  }
+  #name {
+    font-size: 3em;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  #header h1 {
+    font-size: 3em;
+  }
+  #header img {
+    max-width: 400px;
+  }
+  section#about {
+    margin-top: 5%;
+  }
+  #name {
+    font-size: 4em;
+  }
+}
+
+/* Animations */
+@keyframes upDown {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-20px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
