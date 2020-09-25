@@ -54,6 +54,7 @@ section#header {
   animation-duration: 2s;
   font-size: 1.5em;
   margin: 0;
+  text-align: center;
 }
 #name {
   font-family: "Kufam";
@@ -93,6 +94,13 @@ button:hover {
   box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 1);
   cursor: pointer;
 }
+i.fas.fa-download{
+  margin: 0;
+  padding: 0;
+}
+i.fas.fa-download:hover {
+  color: rgb(235, 97, 97);
+}
 /* Grow from hover.css: https://ianlunn.github.io/Hover/ */
 .hvr-grow {
   display: inline-block;
@@ -124,6 +132,21 @@ hr {
 
 /* mobile styles */
 
+#header .flexbox .contact{
+  display: flex;
+  flex-direction: row;
+  font-size: 0.4em;
+  flex: 1;
+  margin: 3%;
+  justify-content: center;
+} 
+#header .flexbox .contact a{
+  margin: 0 2%;
+  color: var(--primary);
+}
+#header .flexbox .contact a:hover{
+  color: var(--extra);
+}
 .container {
   margin: 0;
   padding: 0;
@@ -159,6 +182,7 @@ a.nav-item:focus {
   -webkit-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.79);
   -moz-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.79);
   box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.79);
+  border: 9px solid var(--secondary);
 }
 .card.cardSmall {
   margin: 2% 0;
@@ -184,7 +208,6 @@ h1 {
 i {
   margin: 1%;
 }
-
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   section#header {

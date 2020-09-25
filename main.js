@@ -10,7 +10,7 @@ function setAllToggles() {
   setFadeToggle("contact");
 }
 function setUpButton() {
-  $("button.contact").on("click", () => {
+  $("button.letsTalk").on("click", () => {
     $(".contact .container").focus();
     if ($(".contact .container").css("display", "none")) {
       $(".contact .container").fadeToggle();
