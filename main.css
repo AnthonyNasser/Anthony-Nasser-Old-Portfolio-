@@ -137,10 +137,13 @@ img.onlyMobile {
   display: block;
   margin-bottom: 2em;
 }
+
+/* Carousel  */
 div.carouselAll {
   display: none;
   margin: 0;
 }
+
 #header .flexbox .contact{
   display: flex;
   flex-direction: row;
@@ -268,6 +271,41 @@ i {
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
+  /* NavBar */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--secondary);
+    width: 100%;
+    z-index: 1;
+ }
+  nav ul {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+ }
+  nav ul li {
+    display: table-cell;
+ }
+  nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+ }
+  nav ul li a:hover {
+    color: var(--extra);
+ }
+  nav ul li a.active {
+    color: var(--extra);
+    border-bottom: 3px solid var(--extra);
+ }
+
+  
   img.onlyMobile {
     display: none; 
   }
