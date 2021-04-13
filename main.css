@@ -10,8 +10,6 @@
 
 /* base styles */
 html {
-  border-left: 3px solid var(--extra);
-  border-right: 3px solid var(--extra);
   margin: 0;
   padding: 0;
 }
@@ -60,7 +58,8 @@ section#header {
   font-family: "Kufam";
   font-size: 2em;
   color: var(--primary);
-  margin: 5% 0;
+  margin: 5%;
+  margin-top: 20%;
   text-align: center;
 }
 #header img {
@@ -170,16 +169,6 @@ div.carouselAll {
 .container::after {
   display: flex;
 }
-a.nav-item {
-  font-family: "Kufam", Arial;
-}
-a.nav-item:hover,
-a.nav-item:active,
-a.nav-item:focus {
-  color: var(--extra);
-  border-left: 3px solid var(--primary);
-  padding-left: 5px;
-}
 .flexbox {
   display: flex;
   flex-flow: column wrap;
@@ -190,7 +179,7 @@ a.nav-item:focus {
   margin: 3%;
   font-size: 1em;
   background-color: var(--secondary);
-  border-radius: 10%;
+  border-radius: 4%;
   -webkit-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.5);
   -moz-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.5);
   box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.5);
@@ -204,7 +193,7 @@ a.nav-item:focus {
 }
 .card img {
   width: 100%;
-  border-radius: 10%;
+  border-radius: 3%;
 }
 .card h5,
 h1 {
@@ -221,6 +210,45 @@ i {
   margin: 1%;
 }
 
+  /* NavBar */
+  nav {
+    background: var(--secondary);
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  nav ul#mainNav {
+    bottom: 0;
+    width: 100%;
+  }
+  nav li{
+    display: inline;
+    margin: 3% 4%;
+  }
+  nav li a{
+    display: inline-block;
+    padding: 0.5em;
+  }
+  nav ul li a:hover {
+    color: var(--extra);
+  }
+  nav ul li a.active {
+    color: var(--extra);
+    border-bottom: 3px solid var(--extra);
+ }
+
+  a.nav-item:hover,
+  a.nav-item:active,
+  a.nav-item:focus {
+    color: var(--extra);
+    border-left: 3px solid var(--primary);
+    padding-left: 5px;
+  }
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   section#header {
@@ -231,6 +259,9 @@ i {
   #header h1.pitch {
     font-size: 2em;
     opacity: 1;
+  }
+  #name {
+    margin-top: 15%;
   }
   #header img {
     max-width: 300px;
@@ -271,40 +302,6 @@ i {
 
 /* large tablet & laptop styles */
 @media screen and (min-width: 960px) {
-  /* NavBar */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: var(--secondary);
-    width: 100%;
-    z-index: 1;
- }
-  nav ul {
-    padding: 0;
-    list-style: none;
-    position: relative;
-    display: table;
-    margin: 0 auto;
- }
-  nav ul li {
-    display: table-cell;
- }
-  nav ul li a {
-    padding: 10px 20px;
-    display: block;
-    color: var(--primary);
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
- }
-  nav ul li a:hover {
-    color: var(--extra);
- }
-  nav ul li a.active {
-    color: var(--extra);
-    border-bottom: 3px solid var(--extra);
- }
-
   
   img.onlyMobile {
     display: none; 
@@ -318,6 +315,9 @@ i {
   }
   #header img {
     max-width: 350px;
+  }
+  #name {
+    margin-top: 7%;
   }
   .card {
     width: 35%;

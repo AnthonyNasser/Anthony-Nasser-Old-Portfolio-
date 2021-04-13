@@ -3,6 +3,7 @@ $(document).ready(function () {
 	openToggle('works')
 	openToggle('toolkit')
 	openToggle('contact')
+	openToggle('resume')
 })
 
 function openToggle(aTag) {
@@ -18,6 +19,7 @@ function setAllToggles() {
 	setFadeToggle('works')
 	setFadeToggle('toolkit')
 	setFadeToggle('contact')
+	setFadeToggle('resume')
 }
 function setUpButton() {
 	$('button.letsTalk').on('click', () => {
