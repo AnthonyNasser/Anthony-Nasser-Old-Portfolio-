@@ -91,7 +91,6 @@ function rotate(e) {
 function moveShadowForward(c) {
 	removeShadow(c)
 	giveShadow(nextChar(c))
-	return nextChar(c)
 }
 
 function moveShadowBackward(c) {
