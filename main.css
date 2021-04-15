@@ -250,6 +250,7 @@ i {
     padding-left: 5px;
   }
 
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   section#header {
@@ -460,8 +461,8 @@ i {
   #name {
     font-size: 4em;
   }
-  .next { right: 20%; }
-  .prev { left: 20%; }
+  .next { right: 20.5%; }
+  .prev { left: 20.5%; }
 }
 
 /* Animations */
