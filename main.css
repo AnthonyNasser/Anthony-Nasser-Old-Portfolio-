@@ -80,17 +80,15 @@ button {
   outline: none;
   background-color: var(--primary);
   border: none;
-  padding: 5%;
+  padding: 3%;
   margin: 3% 0;
+  border-radius: 5%;
 }
 button a {
   color: var(--secondary);
 }
 button:hover {
   background-color: var(--extra);
-  -webkit-box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 0.5);
-  -moz-box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 0.5);
-  box-shadow: 1px 0px 10px 3px rgba(200, 243, 186, 0.5);
   cursor: pointer;
 }
 /* Grow from hover.css: https://ianlunn.github.io/Hover/ */
@@ -267,7 +265,7 @@ i {
     max-width: 300px;
   }
   button {
-    font-size: 0.5em;
+    font-size: 0.2em;
     margin-bottom: 10%;
   }
   .card {
@@ -441,13 +439,9 @@ i {
   cursor: pointer;
   background-color: var(--primary);
   border-radius: 10%;
-  border: 3px solid var(--secondary);
   transition: box-shadow 0.1s, top 0.1s;
 }
 .next:hover, .prev:hover { background-color: var(--extra) }
-.next:active, .prev:active {
-  top: 104px;
-}
 .next { right: 10%; }
 .prev { left: 10%; }
 }
