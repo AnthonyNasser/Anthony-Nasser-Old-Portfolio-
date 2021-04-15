@@ -81,8 +81,9 @@ button {
   background-color: var(--primary);
   border: none;
   padding: 3%;
-  margin: 3% 0;
+  margin: 1% 0;
   border-radius: 5%;
+  font-size: 1em;
 }
 button a {
   color: var(--secondary);
@@ -180,11 +181,10 @@ div.carouselAll {
   margin: 3%;
   font-size: 1em;
   background-color: var(--secondary);
-  border-radius: 4%;
-  -webkit-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.5);
-  -moz-box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.5);
-  box-shadow: 0px -4px 19px 7px rgba(238, 236, 232, 0.5);
-  border: 9px solid var(--secondary);
+  border-radius: 1%;
+  -webkit-box-shadow: 0px -2px 15px 5px rgba(238, 236, 232, 0.5);
+  -moz-box-shadow: 0px -2px 15px 5px rgba(238, 236, 232, 0.5);
+  box-shadow: 0px -2px 15px 5px rgba(238, 236, 232, 0.5);
 }
 .card.cardSmall {
   margin: 2% 0;
@@ -194,7 +194,6 @@ div.carouselAll {
 }
 .card img {
   width: 100%;
-  border-radius: 3%;
 }
 .card h5,
 h1 {
@@ -211,44 +210,44 @@ i {
   margin: 1%;
 }
 
-  /* NavBar */
-  nav {
-    background: var(--secondary);
-    list-style: none;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 1;
-  }
-  nav ul#mainNav {
-    bottom: 0;
-    width: 100%;
-  }
-  nav li{
-    display: inline;
-    margin: 3% 4%;
-  }
-  nav li a{
-    display: inline-block;
-    padding: 0.5em;
-  }
-  nav ul li a:hover {
-    color: var(--extra);
-  }
-  nav ul li a.active {
-    color: var(--extra);
-    border-bottom: 3px solid var(--extra);
- }
+/* NavBar */
+nav {
+  background: var(--secondary);
+  list-style: none;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+nav ul#mainNav {
+  bottom: 0;
+  width: 100%;
+}
+nav li{
+  display: inline;
+  margin: 3% 4%;
+}
+nav li a{
+  display: inline-block;
+  padding: 0.5em;
+}
+nav ul li a:hover {
+  color: var(--extra);
+}
+nav ul li a.active {
+  color: var(--extra);
+  border-bottom: 3px solid var(--extra);
+}
 
-  a.nav-item:hover,
-  a.nav-item:active,
-  a.nav-item:focus {
-    color: var(--extra);
-    border-left: 3px solid var(--primary);
-    padding-left: 5px;
-  }
+a.nav-item:hover,
+a.nav-item:active,
+a.nav-item:focus {
+  color: var(--extra);
+  border-left: 3px solid var(--primary);
+  padding-left: 5px;
+}
 
 
 /* small tablet styles */
@@ -269,7 +268,7 @@ i {
     max-width: 300px;
   }
   button {
-    font-size: 0.2em;
+    font-size: 0.8em;
     margin-bottom: 10%;
   }
   .card {
@@ -439,15 +438,15 @@ i {
   position: absolute;
   top: 100px;
   margin-top: 15%;
-  padding: 1em 1.75em;
+  padding: 1.2em;
   cursor: pointer;
   background-color: var(--primary);
   border-radius: 10%;
   transition: box-shadow 0.1s, top 0.1s;
 }
 .next:hover, .prev:hover { background-color: var(--extra) }
-.next { right: 10%; }
-.prev { left: 10%; }
+.next { right: 11%; }
+.prev { left: 11%; }
 }
 
 /* desktop styles */
